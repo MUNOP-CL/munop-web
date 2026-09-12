@@ -1,16 +1,10 @@
 import MunopBoot from "./components/MunopBoot";
+import ProductSelector from "./components/ProductSelector";
 
-const capabilities = [
-  ["AUTOMATION", "Operación física automatizada"],
-  ["ROBOTICS", "Mecánica y electrónica"],
-  ["SOFTWARE", "Control y servicios digitales"],
-  ["PRODUCT", "Diseñado para un uso real"],
-];
-
-const steps = [
-  ["01", "SELECCIÓN", "El cliente selecciona una opción disponible."],
-  ["02", "PROCESO", "La plataforma coordina la operación."],
-  ["03", "DISPENSACIÓN", "El sistema entrega la porción de alimento."],
+const disciplines = [
+  ["01", "ROBOTICS", "Máquinas que interactúan con el mundo físico."],
+  ["02", "EMBEDDED SYSTEMS", "Electrónica y control integrados al producto."],
+  ["03", "SOFTWARE", "Servicios digitales que conectan y coordinan la experiencia."],
 ];
 
 export default function Home() {
@@ -18,8 +12,8 @@ export default function Home() {
     <>
       <MunopBoot />
 
-      <main>
-        <header>
+      <main className="munop-home">
+        <header className="home-header">
           <a className="logo" href="#top" aria-label="MUNOP inicio">
             <b>µ</b>NOP
           </a>
@@ -27,208 +21,132 @@ export default function Home() {
           <div className="header-code">
             MUNOP / CL
             <br />
-            ROBOTICS + SOFTWARE
+            ROBOTICS + EMBEDDED + SOFTWARE
           </div>
 
           <nav>
-            <a href="#platform">PLATFORM</a>
-            <a href="#pilot">PILOT</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#about">MUNOP</a>
             <a className="contact" href="mailto:contacto@munop.cl">
               CONTACTO ↗
             </a>
           </nav>
         </header>
 
-        <section className="hero" id="top">
-          <div className="hero-watermark">µ</div>
+        <section className="home-hero" id="top">
+          <div className="home-hero-watermark">µNOP</div>
 
-          <div className="hero-main">
-            <div className="system-line">
-              <span>PRODUCT / 001</span>
-              <span>STATUS: COMMERCIAL VALIDATION</span>
+          <div className="home-hero-copy">
+            <div className="home-system-line">
+              <span>MUNOP / SYSTEM READY</span>
+              <span>SANTIAGO · CHILE</span>
             </div>
 
-            <p className="kicker">PET FOOD PLATFORM</p>
+            <p className="kicker">ROBOTICS · EMBEDDED SYSTEMS · SOFTWARE</p>
 
-            <h1>
-              ROBOTICS
+            <h1 className="home-title">
+              TECHNOLOGY
               <br />
-              <span>MEETS</span>
+              <span>OUT OF</span>
               <br />
-              PET RETAIL.
+              THE CODE.
             </h1>
 
-            <p className="lead">
-              Una nueva forma de conectar tecnología, mascotas y pet shops
-              mediante una plataforma robótica de dispensación de alimento.
+            <p className="home-lead">
+              Creamos productos donde software, electrónica y robótica se
+              encuentran con problemas y experiencias del mundo real.
             </p>
 
             <div className="actions">
-              <a className="primary" href="#platform">
-                CONOCER EL PROYECTO <i>→</i>
+              <a className="primary" href="#products">
+                EXPLORAR PRODUCTOS <i>→</i>
               </a>
-              <a
-                className="secondary"
-                href="mailto:contacto@munop.cl?subject=Pet%20Food%20Platform%20-%20Piloto"
-              >
-                HABLEMOS DE UN PILOTO
+              <a className="secondary" href="mailto:contacto@munop.cl">
+                HABLAR CON MUNOP
               </a>
             </div>
           </div>
 
-          <div className="product-stage">
-            <div className="stage-label">
-              <span>MUNOP / CONCEPT VISUAL</span>
-              <span>PRODUCT / 001</span>
+          <div className="home-signal" aria-hidden="true">
+            <div className="signal-orbit signal-orbit--outer" />
+            <div className="signal-orbit signal-orbit--inner" />
+            <div className="signal-core">
+              <span>µ</span>NOP
             </div>
-
-            <div className="machine">
-              <div className="machine-brand">
-                <b>µ</b>NOP
-              </div>
-
-              <div className="screen">
-                <small>PET FOOD</small>
-                <strong>READY</strong>
-                <span>START</span>
-              </div>
-
-              <div className="slot" />
-              <div className="bowl" />
-            </div>
-
-            <div className="stage-foot">
-              <span>DESIGN STUDY / V0</span>
-              <span>NOT FINAL HARDWARE</span>
-            </div>
+            <div className="signal-label signal-label--a">PHYSICAL</div>
+            <div className="signal-label signal-label--b">DIGITAL</div>
+            <div className="signal-label signal-label--c">PRODUCT</div>
           </div>
         </section>
 
-        <section className="ticker">
+        <section className="home-ticker" aria-label="MUNOP disciplines">
           <span>MUNOP</span><i>µ</i>
           <span>ROBOTICS</span><i>µ</i>
+          <span>EMBEDDED SYSTEMS</span><i>µ</i>
           <span>SOFTWARE</span><i>µ</i>
-          <span>PRODUCT</span><i>µ</i>
-          <span>PET FOOD PLATFORM</span>
+          <span>PRODUCT</span>
         </section>
 
-        <section className="manifesto" id="platform">
+        <section className="home-about" id="about">
           <aside>
-            <span>001</span>
+            <span>µNOP</span>
             <p>
               MUNOP
               <br />
-              PET FOOD PLATFORM
+              TECHNOLOGY / PRODUCT
             </p>
           </aside>
 
           <div>
-            <p className="kicker">WHAT WE ARE BUILDING</p>
+            <p className="kicker">WHAT IS MUNOP</p>
             <h2>
-              TECNOLOGÍA QUE SALE DEL CÓDIGO Y <em>ENTRA AL MUNDO REAL.</em>
+              TECHNOLOGY THAT LEAVES THE CODE AND <em>ENTERS THE REAL WORLD.</em>
             </h2>
 
-            <p className="manifesto-copy">
-              Pet Food Platform es nuestro primer producto en validación: una
-              plataforma donde robótica y software trabajan juntos para explorar
-              nuevas experiencias dentro del pet shop.
+            <p className="home-about-copy">
+              MUNOP desarrolla tecnología aplicada a productos reales. Diseñamos
+              la experiencia completa: desde el control físico y los sistemas
+              embebidos hasta el software que conecta cada parte.
             </p>
           </div>
         </section>
 
-        <section className="capabilities">
-          {capabilities.map(([name, text], i) => (
-            <article key={name}>
-              <span>0{i + 1}</span>
-              <h3>{name}</h3>
+        <section className="home-disciplines">
+          {disciplines.map(([number, title, text]) => (
+            <article key={number}>
+              <span>{number}</span>
+              <h3>{title}</h3>
               <p>{text}</p>
             </article>
           ))}
         </section>
 
-        <section className="operation">
-          <div className="operation-title">
-            <p className="kicker">HOW IT WORKS / V1</p>
-            <h2>
-              SIMPLE
-              <br />
-              OUTSIDE.
-              <br />
-              <span>ENGINEERING</span>
-              <br />
-              INSIDE.
-            </h2>
-          </div>
+        <ProductSelector />
 
-          <div className="steps">
-            {steps.map(([n, title, text]) => (
-              <article key={n}>
-                <span>{n}</span>
-                <div>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="prototype">
-          <div className="prototype-code">
-            <span>PROTOTYPE_STATUS</span>
-            <strong>FUNCTIONAL</strong>
-            <span>ENCLOSURE_STATUS</span>
-            <strong>IN DEVELOPMENT</strong>
-            <span>COMMERCIAL_STATUS</span>
-            <strong>VALIDATION</strong>
-          </div>
-
-          <div>
-            <p className="kicker">REAL PROTOTYPE / CURRENT STATE</p>
-            <h2>
-              THE MACHINE
-              <br />
-              ALREADY <span>EXISTS.</span>
-            </h2>
-
-            <p>
-              El prototipo funcional valida mecánica, electrónica, software y
-              flujo de operación. La envolvente comercial definitiva todavía
-              está en desarrollo.
-            </p>
-          </div>
-        </section>
-
-        <section className="pilot" id="pilot">
-          <div className="pilot-mark">µ</div>
-
-          <p className="kicker">PILOT PROGRAM / PET SHOPS</p>
-
+        <section className="home-contact">
+          <div className="home-contact-mark">µ</div>
+          <p className="kicker">MUNOP / CONTACT</p>
           <h2>
-            BUSCAMOS EL
+            BUILDING THE
             <br />
-            <span>PRIMER LUGAR</span>
-            <br />
-            DONDE PROBARLO.
+            <span>NEXT REAL THING.</span>
           </h2>
-
           <p>
-            Estamos conversando con pet shops interesados en conocer el proyecto
-            y explorar una futura experiencia piloto.
+            ¿Tienes una idea, oportunidad o espacio donde una solución MUNOP
+            podría tener sentido? Conversemos.
           </p>
-
-          <a href="mailto:contacto@munop.cl?subject=Pet%20Food%20Platform%20-%20Interés%20en%20piloto">
-            ME INTERESA EL PILOTO <i>→</i>
+          <a href="mailto:contacto@munop.cl">
+            contacto@munop.cl <i>→</i>
           </a>
         </section>
 
-        <footer>
+        <footer className="home-footer">
           <div className="logo footer-logo">
             <b>µ</b>NOP
           </div>
-          <p>ROBOTICS / SOFTWARE / PRODUCT</p>
+          <p>ROBOTICS / EMBEDDED SYSTEMS / SOFTWARE</p>
           <a href="mailto:contacto@munop.cl">contacto@munop.cl</a>
-          <small>PET FOOD PLATFORM — PROTOTYPE & COMMERCIAL VALIDATION</small>
+          <small>MUNOP — CHILE</small>
         </footer>
       </main>
     </>

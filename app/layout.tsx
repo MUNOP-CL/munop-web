@@ -3,20 +3,17 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MUNOP — Pet Food Platform",
+  title: "MUNOP — Robotics, Embedded Systems & Software",
   description:
-    "Robótica, software y producto. Pet Food Platform en etapa de prototipo y validación comercial.",
+    "MUNOP desarrolla productos que conectan robótica, sistemas embebidos y software con aplicaciones del mundo real.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
-      <body>{children}
-         <Analytics />
+      <body>
+        {children}
+        <Analytics />
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
 {
-  "name": "munop-landing-v3",
-  "version": "0.3.0",
+  "name": "munop-web",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,10 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
     "next": "16.3.0",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "@vercel/analytics": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
