@@ -1,9 +1,10 @@
+import AssessmentTimeline from "./AssessmentTimeline";
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "MuAI — Research & Engineering | MUNOP",
-  description: "MuAI es una iniciativa experimental de MUNOP para evaluar afirmaciones de ingeniería mediante evidencia técnica verificable.",
+  title: "µAI — Research & Engineering | MUNOP",
+  description: "µAI investiga una capa de evidencia y verificación entre un operador humano y un agente de IA. Prototipo experimental de MUNOP.",
 };
 
 const process = [
@@ -23,12 +24,34 @@ export default function MuAIResearchPage() {
       </header>
 
       <section className="muai-page-hero">
-        <div className="muai-page-topline"><span>EXPERIMENTAL PLATFORM / MuAI</span><span>WORKING PROTOTYPE</span></div>
-        <p className="kicker">MUNOP / ENGINEERING RESEARCH</p>
-        <h1>MuAI<span>.</span></h1>
-        <h2>ENGINEERING DECISIONS<br /><em>GROUNDED IN EVIDENCE.</em></h2>
-        <p className="muai-page-intro">Investigamos cómo construir herramientas que ayuden a tomar decisiones técnicas a partir de evidencia explícita, conservando qué se observó, cómo se evaluó y qué límites tiene la conclusión.</p>
-        <div className="muai-page-tags"><span>.NET 8</span><span>LINUX</span><span>SSH</span><span>EVIDENCE VALIDATION</span></div>
+        <div className="muai-page-topline"><span>EXPERIMENTAL PLATFORM / µAI</span><span>WORKING PROTOTYPE</span></div>
+        <div className="muai-hero-intro-grid">
+          <div className="muai-hero-copy">
+            <div className="muai-hero-brand">
+              <p className="kicker">MUNOP / ENGINEERING RESEARCH</p>
+              <h1>µAI<span>.</span></h1>
+            </div>
+            <h2>BETWEEN HUMAN INTENT<br /><em>AND AI OUTPUT.</em></h2>
+            <p className="muai-page-intro">µAI explora una capa de verificación entre un operador humano y un agente de IA. El operador define el objetivo; el agente propone una respuesta; µAI ayuda a contrastar afirmaciones explícitas con evidencia registrada antes de presentarlas como conclusiones revisables.</p>
+            <div className="muai-page-tags"><span>.NET 8</span><span>LINUX</span><span>SSH</span><span>EVIDENCE VALIDATION</span></div>
+          </div>
+          <div className="muai-hero-timeline"><AssessmentTimeline /></div>
+        </div>
+      </section>
+      <section className="muai-boundary-band" aria-label="Arquitectura conceptual de µAI">
+        <div className="muai-boundary-band-inner">
+        <div className="muai-boundary" aria-label="Diagrama conceptual: operador humano, capa de verificación µAI y agente de IA">
+          <div className="muai-boundary-heading"><span>SYSTEM POSITION / CONCEPTUAL ARCHITECTURE</span><span>HUMAN ↔ µAI ↔ AI</span></div>
+          <div className="muai-boundary-grid">
+            <div className="muai-boundary-node"><span>01 / HUMAN</span><strong>OPERADOR</strong><p>Define el objetivo, autoriza las acciones y revisa la decisión.</p></div>
+            <div className="muai-boundary-link" aria-hidden="true">↔</div>
+            <div className="muai-boundary-node muai-boundary-node--core"><span>02 / EVIDENCE BOUNDARY</span><strong>µAI</strong><p>Registra evidencia, comprueba afirmaciones explícitas y señala límites.</p></div>
+            <div className="muai-boundary-link" aria-hidden="true">↔</div>
+            <div className="muai-boundary-node"><span>03 / INTELLIGENCE</span><strong>AI AGENT</strong><p>Propone interpretaciones y respuestas sujetas a revisión.</p></div>
+          </div>
+          <p className="muai-boundary-caveat">Arquitectura objetivo de investigación. El prototipo actual valida un flujo acotado de evidencia Linux; no implementa todavía un intermediario universal entre personas y agentes.</p>
+        </div>
+        </div>
       </section>
 
       <section className="muai-page-proof" aria-labelledby="muai-proof-title">
@@ -54,11 +77,11 @@ export default function MuAIResearchPage() {
 
       <section className="muai-page-results">
         <div><p className="kicker">VALIDATION / CURRENT STATUS</p><h2>NOT JUST A<br /><em>GREEN CHECKMARK.</em></h2></div>
-        <div><p>El prototipo ha superado 253 pruebas automatizadas y una verificación manual de tres escenarios negativos en el navegador: JSON alterado, manifiesto ausente y conclusión falsificada con hash regenerado.</p><p>En esos escenarios, el visor rechaza la validación y no presenta la conclusión como confiable.</p><p><strong>Límites:</strong> la coincidencia SHA-256 comprueba consistencia local, no autenticidad independiente. MuAI sigue siendo un prototipo experimental, no un servicio de producción ni un agente general de IA validado.</p></div>
+        <div><p>El prototipo ha superado 253 pruebas automatizadas y una verificación manual de tres escenarios negativos en el navegador: JSON alterado, manifiesto ausente y conclusión falsificada con hash regenerado.</p><p>En esos escenarios, el visor rechaza la validación y no presenta la conclusión como confiable.</p><p><strong>Límites:</strong> la coincidencia SHA-256 comprueba consistencia local, no autenticidad independiente. µAI sigue siendo un prototipo experimental, no un servicio de producción ni un agente general de IA validado.</p></div>
       </section>
 
       <section className="muai-page-contact"><p className="kicker">MUNOP / OPEN CONVERSATION</p><h2>BUILDING WITH<br /><span>EVIDENCE.</span></h2><p>¿Te interesa la validación técnica, la ingeniería de software o el futuro de herramientas verificables? Conversemos.</p><a href="mailto:contacto@munop.cl?subject=MuAI%20-%20Research%20%26%20Engineering">CONTACTAR MUNOP <span aria-hidden="true">→</span></a></section>
-      <footer className="muai-page-footer"><Link className="logo" href="/"><b>µ</b>NOP</Link><span>MuAI / RESEARCH PROTOTYPE</span><Link href="/">BACK TO MUNOP ↗</Link></footer>
+      <footer className="muai-page-footer"><Link className="logo" href="/"><b>µ</b>NOP</Link><span>µAI / RESEARCH PROTOTYPE</span><Link href="/">BACK TO MUNOP ↗</Link></footer>
     </main>
   );
 }

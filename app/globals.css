@@ -1209,3 +1209,396 @@ footer small{grid-column:2/4}
 .muai-page-footer{max-width:var(--max);margin:auto;padding:50px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.muai-page-footer>span,.muai-page-footer>a:last-child{font:700 10px monospace;color:#667175}
 @media(max-width:900px){.muai-research-body,.muai-page-proof,.muai-page-results{grid-template-columns:1fr}.muai-process-grid{grid-template-columns:repeat(2,1fr)}.muai-page-header>span{display:none}}
 @media(max-width:600px){.muai-research{padding:75px 18px}.muai-research-meta,.muai-page-topline{font-size:9px}.muai-research-body{gap:36px}.muai-research h2,.muai-page-proof h2,.muai-page-results h2{font-size:46px}.muai-page-header{padding:0 18px}.muai-page-hero{padding:45px 18px 75px}.muai-page-topline{margin-bottom:55px}.muai-page-hero h1{font-size:110px;margin-bottom:50px}.muai-page-hero h2{font-size:42px}.muai-page-proof,.muai-page-results,.muai-page-contact{padding:80px 18px}.muai-page-process{padding:80px 18px}.muai-process-grid{grid-template-columns:1fr}.muai-process-grid article{min-height:180px}.muai-process-grid h3{margin-top:40px}.muai-page-footer{padding:35px 18px;flex-wrap:wrap}.muai-page-footer>span{display:none}}
+
+
+/* MUNOP / MuAI OPERATOR-AGENT BOUNDARY — OLC_13 STEP 03 */
+.muai-boundary{margin-top:65px;padding:25px;background:#111b1e;color:#eef5ef;border:1px solid #31443d}
+.muai-boundary-heading{display:flex;justify-content:space-between;gap:15px;padding-bottom:19px;border-bottom:1px solid #455653;color:#a5b9ae;font:700 10px/1.5 monospace;letter-spacing:.1em}
+.muai-boundary-grid{display:grid;grid-template-columns:minmax(0,1fr) 35px minmax(0,1.12fr) 35px minmax(0,1fr);align-items:stretch;gap:10px;margin-top:22px}
+.muai-boundary-node{min-width:0;padding:24px 20px;background:#1b2a2b;border:1px solid #435551}
+.muai-boundary-node>span{display:block;color:#a3b9b1;font:700 10px monospace;letter-spacing:.07em}
+.muai-boundary-node strong{display:block;margin:27px 0 12px;font:900 clamp(24px,2.6vw,38px)/1 Arial,Helvetica,sans-serif;letter-spacing:-.05em}
+.muai-boundary-node p{margin:0;color:#bacac4;font:14px/1.55 Arial,Helvetica,sans-serif}
+.muai-boundary-node--core{background:#224d36;border:2px solid var(--acid)}
+.muai-boundary-node--core strong{color:var(--acid);font-size:clamp(48px,5.2vw,72px)}
+.muai-boundary-link{display:grid;place-items:center;color:var(--acid);font:700 27px monospace}
+.muai-boundary-caveat{margin:19px 0 0;color:#a5b9ae;font:12px/1.65 monospace}
+@media(max-width:760px){.muai-boundary{padding:18px}.muai-boundary-grid{grid-template-columns:1fr;gap:8px}.muai-boundary-link{min-height:30px;transform:rotate(90deg)}.muai-boundary-node strong{margin:14px 0 9px}.muai-boundary-heading{flex-wrap:wrap}.muai-boundary-node--core strong{font-size:52px}}
+@media(max-width:600px){.muai-page-hero h1{font-size:clamp(100px,28vw,150px)}.muai-page-hero h2{font-size:clamp(34px,9vw,42px)}}
+
+
+/* MUNOP / µAI HERO WORKBENCH PREVIEW — OLC_13 STEP 04 */
+.muai-hero-intro-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.85fr);gap:48px;align-items:center;margin-bottom:58px}
+.muai-hero-brand{min-width:0}.muai-hero-brand h1{margin-bottom:0;font-size:clamp(100px,15vw,235px)}
+.muai-hero-workbench{min-width:0;background:#111b1e;color:#d8e7df;border:1px solid #3e5950;box-shadow:16px 18px 0 rgba(13,22,25,.07);padding:19px 22px;font:700 10px/1.5 monospace;letter-spacing:.035em}
+.muai-wb-top,.muai-wb-title,.muai-wb-row,.muai-wb-outcome,.muai-wb-foot{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.muai-wb-top{padding-bottom:16px;border-bottom:1px solid #455653;color:#f3f8f4}.muai-wb-top b{color:var(--acid);font-size:21px;font-style:italic}.muai-wb-dot{color:var(--acid);font-size:9px}
+.muai-wb-flow{display:flex;align-items:center;justify-content:space-between;gap:7px;margin:17px 0;padding:12px 9px;background:#20312e;font-size:9px;text-align:center}.muai-wb-flow span{min-width:0}.muai-wb-flow i{color:var(--acid);font-style:normal}.muai-wb-flow strong{color:#111b1e;background:var(--acid);padding:7px 10px;font-size:16px}
+.muai-wb-title{margin-top:22px;padding-bottom:8px;border-bottom:1px solid #455653;color:var(--acid);font-size:10px}.muai-wb-title span{color:#91a9a0;font-size:9px}
+.muai-wb-question{padding:16px 0;color:#f3f8f4;font:600 14px/1.45 Arial,Helvetica,sans-serif;letter-spacing:0}
+.muai-wb-row{padding:9px 0;border-bottom:1px solid #31453e;color:#9db3a8;font-size:10px}.muai-wb-row strong{color:#e6f1eb}
+.muai-wb-outcome{margin-top:15px;padding:12px;background:#244532;color:#d3e8db}.muai-wb-outcome strong{color:var(--acid);font-size:13px}
+.muai-wb-foot{margin-top:15px;color:#9db3a8;font-size:9px}.muai-wb-caption{margin:14px 0 0;color:#a7b9af;font:10px/1.55 monospace;letter-spacing:0}
+@media(max-width:980px){.muai-hero-intro-grid{grid-template-columns:1fr;gap:35px}.muai-hero-brand h1{font-size:clamp(100px,22vw,210px)}.muai-hero-workbench{max-width:640px}}
+@media(max-width:600px){.muai-hero-intro-grid{margin-bottom:42px}.muai-hero-brand h1{font-size:clamp(100px,28vw,150px)}.muai-hero-workbench{padding:14px}.muai-wb-flow{font-size:8px;gap:4px}.muai-wb-flow strong{padding:6px}.muai-wb-foot{flex-wrap:wrap}}
+
+
+/* MUNOP / µAI HISTORY DASHBOARD — OLC_13 STEP 05 */
+.muai-wb-history{padding:17px 19px;font-size:9px}
+.muai-wb-history-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:17px 0}
+.muai-wb-eyebrow{color:var(--acid);font:700 9px monospace;letter-spacing:.06em}
+.muai-wb-history-head h2{margin:6px 0;font:900 clamp(18px,2vw,26px)/1 Arial,Helvetica,sans-serif;letter-spacing:-.035em}
+.muai-wb-history-head p{margin:0;color:#b9ccc3;font:12px/1.4 Arial,Helvetica,sans-serif;letter-spacing:0}
+.muai-wb-live{flex:0 0 auto;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.muai-wb-live small{color:#b3c3ba;font-size:8px}.muai-wb-live strong{color:#f4f8f4;font:900 30px/1 Arial,Helvetica,sans-serif}.muai-wb-live span{color:var(--acid);font-size:9px}
+.muai-wb-history-meta{display:flex;justify-content:space-between;gap:7px;flex-wrap:wrap;padding:10px 0;border-top:1px solid #40544c;border-bottom:1px solid #40544c;color:#b6c8be;font-size:8px}
+.muai-wb-chart{margin-top:15px;padding:12px;background:#182a29;border:1px solid #345249}
+.muai-wb-chart-top,.muai-wb-history-events-title{display:flex;justify-content:space-between;gap:10px;color:#c8d7d0;font-size:8px}.muai-wb-chart-top span:last-child{color:var(--acid)}
+.muai-wb-chart-plot{height:155px;position:relative;margin-top:9px;border-bottom:1px solid #5b7669;background:repeating-linear-gradient(to top,transparent 0,transparent 37px,rgba(255,255,255,.06) 38px)}
+.muai-wb-threshold{position:absolute;z-index:1;top:14px;left:0;right:0;border-top:1px dashed #e2d77b;color:#e2d77b;text-align:right}.muai-wb-threshold span{position:relative;top:-12px;background:#182a29;padding-left:6px;font-size:8px}
+.muai-wb-bars{position:absolute;inset:18px 8px 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:end;gap:16px}
+.muai-wb-bar-col{height:100%;min-width:0;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px;color:#c1d3ca;font-size:9px}
+.muai-wb-bar-col>span{font-size:10px}.muai-wb-bar{width:100%;max-width:44px;min-height:12px;background:#4b8270;border:1px solid #7cae98}.muai-wb-bar-col--latest .muai-wb-bar{background:var(--acid);border-color:var(--acid)}.muai-wb-bar-col--latest>span{color:var(--acid)}.muai-wb-bar-col small{font-size:8px;color:#afc4b9}
+.muai-wb-chart-note{margin:10px 0 0;color:#aebfb5;font:9px/1.45 monospace;letter-spacing:0}
+.muai-wb-history-events{margin-top:15px}.muai-wb-history-events-title{padding-bottom:8px;color:var(--acid)}
+.muai-wb-history-event{display:grid;grid-template-columns:1fr 1.25fr auto;gap:6px;align-items:center;padding:8px 0;border-top:1px solid #345047;font-size:8px;color:#b7c8bf}.muai-wb-history-event strong{color:#eef6f1;font-size:9px}.muai-wb-history-event em{font-style:normal;color:#afc3b7;font-size:8px}.muai-wb-history-event:first-of-type em{color:var(--acid)}
+.muai-wb-history .muai-wb-caption{font-size:9px;line-height:1.5}
+@media(max-width:600px){.muai-wb-history{padding:12px}.muai-wb-history-head h2{font-size:18px}.muai-wb-live strong{font-size:24px}.muai-wb-live small{font-size:7px}.muai-wb-bars{gap:8px}.muai-wb-history-event{grid-template-columns:1fr 1.2fr auto}.muai-wb-history-event em{font-size:7px}}
+
+
+/* MUNOP / µAI POLICY HISTORY CAROUSEL — OLC_13 STEP 06 */
+.muai-timeline{padding:17px 19px}
+.muai-timeline-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin:16px 0}
+.muai-timeline-heading h2{margin:7px 0 0;font:900 clamp(16px,1.5vw,23px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:-.035em}
+.muai-timeline-policy{flex:none;border:1px solid #638b75;color:var(--acid);padding:6px 8px;font-size:9px}
+.muai-timeline-summary{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:8px;padding:13px 0;border-top:1px solid #40544c}
+.muai-timeline-summary>div{display:flex;flex-direction:column;gap:5px;min-width:0}
+.muai-timeline-summary small{font-size:8px;color:#a8c0b4}
+.muai-timeline-summary strong{font:900 23px/1 Arial,Helvetica,sans-serif;color:#f5f8f5}
+.muai-timeline-summary strong.muai-timeline-warn{font:800 11px/1.6 monospace;color:#f4c36c}
+.muai-timeline-summary strong.muai-timeline-ok{font:800 11px/1.6 monospace;color:var(--acid)}
+.muai-timeline-meter{height:20px;position:relative;background:#293c37;border:1px solid #4d6559;margin-top:10px}
+.muai-timeline-usage{height:100%;background:linear-gradient(90deg,#397c60,var(--acid));transition:width .25s ease}
+.muai-timeline-limit{position:absolute;top:-6px;bottom:-6px;width:2px;background:#f5c46b;transition:left .25s ease}
+.muai-timeline-limit span{position:absolute;right:-10px;bottom:100%;font-size:9px;color:#f5c46b}
+.muai-timeline-caption{display:flex;justify-content:space-between;margin:9px 0 0;color:#91a69b;font-size:9px}
+.muai-timeline-event{min-height:116px;margin-top:18px;padding:13px;border:1px solid #3b584b;background:#192b28}
+.muai-timeline-event>span{color:var(--acid);font-size:9px}
+.muai-timeline-event h3{margin:7px 0;font:900 17px Arial,Helvetica,sans-serif;color:#f5f8f5}
+.muai-timeline-event p{margin:0;color:#bed1c5;font:12px/1.5 Arial,Helvetica,sans-serif;letter-spacing:0}
+.muai-timeline-controls{display:flex;justify-content:space-between;align-items:center;margin-top:14px;color:#b8cbc0;font-size:10px}
+.muai-timeline-controls button,.muai-timeline-points button{font:700 10px monospace;cursor:pointer;color:#e7f4ea;background:transparent;border:1px solid #536f60;padding:9px 12px}
+.muai-timeline-controls button:disabled{opacity:.35;cursor:not-allowed}
+.muai-timeline-controls button:focus-visible,.muai-timeline-points button:focus-visible{outline:2px solid var(--acid);outline-offset:3px}
+.muai-timeline-points{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:12px}
+.muai-timeline-points button{min-width:0;padding:8px 5px;color:#aebfb5;font-size:9px}
+.muai-timeline-points button[aria-pressed=true]{color:var(--acid);border-color:var(--acid)}
+.muai-timeline-points i{display:block;height:3px;margin-top:6px;background:#557565}
+.muai-timeline-points i.muai-timeline-change{background:#f5c46b}
+.muai-timeline-points button[aria-pressed=true] i{background:var(--acid)}
+.muai-timeline .muai-wb-caption{font-size:9px;line-height:1.5}
+@media(max-width:600px){.muai-timeline{padding:12px}.muai-timeline-summary strong{font-size:20px}.muai-timeline-heading h2{font-size:17px}}
+@media(prefers-reduced-motion:reduce){.muai-timeline-usage,.muai-timeline-limit{transition:none}}
+
+
+/* MUNOP / µAI DECISION PROVENANCE / OLC_13 STEP 07 */
+.muai-decision-event{display:grid;grid-template-columns:1fr auto;gap:5px 12px;padding:10px 12px;background:#192b28;border:1px solid #3b584b}
+.muai-decision-event>span{color:var(--acid);font:700 9px monospace}
+.muai-decision-event>strong{color:#b8d4c4;font:700 9px monospace;text-align:right}
+.muai-decision-event h3{grid-column:1/-1;margin:2px 0 0;color:#f5f8f5;font:900 16px Arial,Helvetica,sans-serif}
+.muai-decision-measures{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;padding:12px 0}
+.muai-decision-measures>div{display:flex;flex-direction:column;gap:5px;min-width:0}
+.muai-decision-measures small{font:700 8px monospace;color:#a8c0b4}
+.muai-decision-measures strong{font:900 22px Arial,Helvetica,sans-serif;color:#f5f8f5}
+.muai-decision-measures strong.muai-timeline-warn{font:800 11px/2 monospace;color:#f4c36c}
+.muai-decision-measures strong.muai-timeline-ok{font:800 11px/2 monospace;color:var(--acid)}
+.muai-decision-detail{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
+.muai-decision-detail>div{min-width:0;padding:10px;background:#1b2e2a;border:1px solid #405a4e}
+.muai-decision-detail small{display:block;margin-bottom:7px;color:var(--acid);font:700 9px/1.4 monospace}
+.muai-decision-detail p{margin:0;color:#d5e3da;font:12px/1.45 Arial,Helvetica,sans-serif}
+.muai-decision-detail .muai-decision-reason{background:#243c31;border-color:#6a966f}
+.muai-decision-evidence{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;margin-top:10px;color:#99b9a6;font:9px/1.5 monospace}
+.muai-decision .muai-timeline-meter{margin-top:4px}
+.muai-decision .muai-wb-caption{margin-top:13px}
+@media(max-width:600px){.muai-decision-detail{grid-template-columns:1fr}.muai-decision-measures strong{font-size:19px}.muai-decision-detail p{font-size:12px}}
+
+
+/* MUNOP / µAI HERO LAYOUT — OLC_13 STEP 09 */
+/* Compact identity at upper left; carousel gets the dominant area. */
+.muai-page-hero .muai-hero-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(170px, 250px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(24px, 3vw, 48px);
+  margin-bottom: clamp(36px, 5vw, 72px);
+}
+.muai-page-hero .muai-hero-brand {
+  min-width: 0;
+  align-self: start;
+}
+.muai-page-hero .muai-hero-brand .kicker {
+  margin-bottom: 22px;
+}
+.muai-page-hero .muai-hero-brand h1 {
+  font-size: clamp(85px, 10vw, 160px);
+  line-height: .85;
+  letter-spacing: -.11em;
+  margin: 0;
+  white-space: nowrap;
+}
+.muai-page-hero .muai-hero-intro-grid > .muai-hero-workbench {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .muai-page-hero .muai-hero-intro-grid {
+    grid-template-columns: minmax(130px, 180px) minmax(0, 1fr);
+    gap: 20px;
+  }
+  .muai-page-hero .muai-hero-brand h1 {
+    font-size: clamp(80px, 10vw, 115px);
+  }
+}
+@media (max-width: 700px) {
+  .muai-page-hero .muai-hero-intro-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+  .muai-page-hero .muai-hero-brand h1 {
+    font-size: clamp(90px, 23vw, 145px);
+  }
+  .muai-page-hero .muai-hero-brand .kicker {
+    margin-bottom: 14px;
+  }
+}
+
+/* MUNOP / OLC_13 STEP 10 — TWO-COLUMN HERO */
+/* Keep identity and explanation visible while the timeline changes. */
+.muai-page-hero .muai-hero-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .92fr);
+  gap: clamp(24px, 3.2vw, 56px);
+  align-items: start;
+  margin-bottom: clamp(36px, 5vw, 72px);
+}
+.muai-page-hero .muai-hero-copy,
+.muai-page-hero .muai-hero-timeline { min-width: 0; }
+.muai-page-hero .muai-hero-brand { margin: 0 0 clamp(25px, 3vw, 48px); }
+.muai-page-hero .muai-hero-brand h1 {
+  font-size: clamp(84px, 10vw, 148px);
+  line-height: .85;
+  margin: 10px 0 0;
+}
+.muai-page-hero .muai-hero-copy h2 {
+  font-size: clamp(34px, 4.1vw, 64px);
+  line-height: .98;
+  letter-spacing: -.065em;
+  overflow-wrap: normal;
+  margin: 0 0 clamp(22px, 2.6vw, 36px);
+}
+.muai-page-hero .muai-hero-copy h2 em { font-style: normal; }
+.muai-page-hero .muai-hero-copy .muai-page-intro {
+  font-size: clamp(15px, 1.25vw, 19px);
+  line-height: 1.65;
+  max-width: 62ch;
+  margin: 0 0 26px;
+}
+.muai-page-hero .muai-hero-copy .muai-page-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.muai-page-hero .muai-hero-timeline { width: 100%; }
+@media (max-width: 900px) {
+  .muai-page-hero .muai-hero-intro-grid { grid-template-columns: 1fr; }
+  .muai-page-hero .muai-hero-copy h2 { font-size: clamp(36px, 7vw, 66px); }
+  .muai-page-hero .muai-hero-brand h1 { font-size: clamp(96px, 18vw, 155px); }
+}
+@media (max-width: 600px) {
+  .muai-page-hero .muai-hero-intro-grid { gap: 30px; }
+  .muai-page-hero .muai-hero-copy h2 { font-size: clamp(33px, 9vw, 52px); }
+}
+
+/* MUNOP / OLC_13 STEP 11 — SECTION ALIGNMENT */
+.muai-page-hero {
+  padding-bottom: clamp(44px, 5vw, 76px);
+}
+
+.muai-page-hero .muai-boundary {
+  margin-top: clamp(34px, 4vw, 54px);
+}
+
+.muai-page-proof {
+  padding-top: clamp(64px, 6vw, 92px);
+  padding-bottom: clamp(64px, 6vw, 92px);
+  column-gap: clamp(28px, 4vw, 65px);
+}
+
+@media (max-width: 600px) {
+  .muai-page-hero { padding-bottom: 48px; }
+  .muai-page-proof { padding-top: 64px; padding-bottom: 64px; }
+}
+
+/* MUNOP / OLC_13 STEP 12 — CONSISTENT CONTENT WIDTH */
+
+/* Keep the architecture and hero in the same container. */
+.muai-page-hero {
+  width: 100%;
+  max-width: var(--max);
+  box-sizing: border-box;
+  margin-inline: auto;
+}
+
+/* Keep the PROOF background full width,
+   but align its content to the hero's inner edges. */
+.muai-page-proof {
+  padding-left: max(28px, calc((100vw - var(--max)) / 2 + 28px));
+  padding-right: max(28px, calc((100vw - var(--max)) / 2 + 28px));
+}
+
+@media (max-width: 600px) {
+  .muai-page-proof {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+/* MUNOP / OLC_13 STEP 12 — VISUAL SECTION ALIGNMENT */
+/* The architecture is a contained card; the proof is a full-bleed band.
+   Match their *content* boundaries, not their background boundaries. */
+.muai-page-hero {
+  box-sizing: border-box;
+  max-width: var(--max);
+  padding-bottom: 32px;
+}
+.muai-page-hero .muai-boundary {
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+/* Keep the proof background full width; align its grid to the same inner width. */
+.muai-page-proof {
+  box-sizing: border-box;
+  padding-left: max(28px, calc((100vw - var(--max)) / 2 + 28px));
+  padding-right: max(28px, calc((100vw - var(--max)) / 2 + 28px));
+  padding-top: 64px;
+  padding-bottom: 72px;
+}
+@media (max-width: 600px) {
+  .muai-page-hero { padding-bottom: 24px; }
+  .muai-page-hero .muai-boundary { margin-top: 28px; }
+  .muai-page-proof { padding: 56px 18px 64px; }
+}
+
+/* MUNOP / OLC_13 STEP 13 — FULL-BLEED BOUNDARY + STABLE CAROUSEL */
+/* A full-width dark band; only its content is constrained to --max. */
+.muai-boundary-band {
+  width: 100%;
+  box-sizing: border-box;
+  background: #111b1e;
+  color: #eef5ef;
+  padding: clamp(28px, 3vw, 48px) 28px;
+}
+.muai-boundary-band-inner {
+  box-sizing: border-box;
+  max-width: var(--max);
+  margin-inline: auto;
+}
+.muai-boundary-band .muai-boundary {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+/* Keep the next section attached to the architecture band. */
+.muai-page-hero { padding-bottom: clamp(28px, 3vw, 48px); }
+/* Carousel content changes length. Reserve room so the band below won't jump. */
+.muai-page-hero .muai-hero-timeline {
+  min-height: 760px;
+  align-self: start;
+}
+@media (max-width: 900px) {
+  .muai-page-hero .muai-hero-timeline { min-height: 760px; }
+}
+@media (max-width: 600px) {
+  .muai-boundary-band { padding: 28px 18px; }
+  .muai-page-hero .muai-hero-timeline { min-height: 820px; }
+}
+
+/* MUNOP / OLC_13 STEP 14 — ARCHITECTURE VS PROOF CONTRAST */
+/* Future research architecture: forest-green full-width band. */
+.muai-boundary,
+.muai-boundary-section,
+.muai-page-boundary,
+.muai-page-architecture {
+  background-color: #17372e;
+}
+/* Preserve the actual measured proof as a distinct near-black band. */
+.muai-page-proof {
+  background-color: #111b1e;
+}
+
+/* MUNOP / OLC_13 STEP 15 — ARCHITECTURE BAND COLOR */
+/* Full-width conceptual architecture, distinct from the verified proof. */
+.muai-boundary-band {
+  background-color: #17372e;
+}
+/* Preserve dark proof section as the separate validated context. */
+.muai-page-proof {
+  background-color: #111b1e;
+}
+
+/* MUNOP / OLC_13 STEP 16 — WHITE ARCHITECTURE + STABLE WORKBENCH */
+/* Full-width architecture section: a separate visual context from the proof. */
+.muai-boundary-band {
+  background: #ffffff;
+  color: #0d1619;
+}
+.muai-boundary-band .muai-boundary-heading,
+.muai-boundary-band .muai-boundary-caveat {
+  color: #53615f;
+}
+.muai-boundary-band .muai-boundary-heading {
+  border-bottom-color: #d8dedb;
+}
+/* The dark architecture cards keep their existing colors and contrast. */
+
+/* A min-height alone cannot prevent later slides from resizing the hero.
+   Fixed block-size + internal scrolling isolates slide-height variation. */
+.muai-page-hero .muai-hero-timeline {
+  height: 800px;
+  min-height: 0;
+  max-height: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  align-self: start;
+}
+@media (max-width: 900px) {
+  .muai-page-hero .muai-hero-timeline {
+    height: 820px;
+    min-height: 0;
+  }
+}
+@media (max-width: 600px) {
+  .muai-page-hero .muai-hero-timeline {
+    height: 880px;
+    min-height: 0;
+  }
+}
+
+/* MUNOP / OLC_13 STEP 17 — PAPER ARCHITECTURE BAND */
+/* Match the hero's paper background, not pure white. */
+.muai-boundary-band {
+  background: var(--paper, #f1f0e9);
+  color: var(--ink, #0d1619);
+}
+/* Keep the diagram itself dark, with readable light text. */
+.muai-boundary-band .muai-boundary-heading,
+.muai-boundary-band .muai-boundary-caveat {
+  color: #53615f;
+}
+.muai-boundary-band .muai-boundary-heading { border-bottom-color: var(--line, #d5d7d0); }
+.muai-boundary-band .muai-boundary-node { color: #eef5ef; }

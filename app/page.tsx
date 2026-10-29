@@ -26,7 +26,7 @@ export default function Home() {
 
           <nav>
             <a href="#products">PRODUCTS</a>
-            <a href="/research/muai">RESEARCH / MuAI</a>
+            <a href="/research/muai">RESEARCH / µAI</a>
             <a href="#about">MUNOP</a>
             <a className="contact" href="mailto:contacto@munop.cl">
               CONTACTO ↗
@@ -131,13 +131,13 @@ export default function Home() {
           </div>
           <div className="muai-research-body">
             <div>
-              <p className="kicker">INTRODUCING / MuAI</p>
+              <p className="kicker">INTRODUCING / µAI</p>
               <h2 id="muai-research-title">ENGINEERING.<br /><em>GROUNDED IN EVIDENCE.</em></h2>
-              <p>MuAI investiga cómo recopilar evidencia técnica, evaluar afirmaciones explícitas y conservar resultados que puedan revisarse posteriormente.</p>
+              <p>µAI investiga una capa de verificación entre el operador humano y un agente de IA: recopila evidencia técnica, evalúa afirmaciones explícitas y conserva resultados revisables.</p>
               <a className="muai-research-link" href="/research/muai">EXPLORAR INVESTIGACIÓN <span aria-hidden="true">→</span></a>
             </div>
             <div className="muai-research-terminal" aria-label="Ejemplo de evaluación de evidencia Linux">
-              <div className="muai-terminal-bar"><span>µNOP / MuAI</span><span>ASSESSMENT / 001</span></div>
+              <div className="muai-terminal-bar"><span>µNOP / µAI</span><span>ASSESSMENT / 001</span></div>
               <p><span>target</span> Linux / remote</p>
               <p><span>claim</span> root usage ≥ 85%</p>
               <p><span>observed</span> 3.72%</p>
