@@ -26,6 +26,7 @@ export default function Home() {
 
           <nav>
             <a href="#products">PRODUCTS</a>
+            <a href="/research/muai">RESEARCH / MuAI</a>
             <a href="#about">MUNOP</a>
             <a className="contact" href="mailto:contacto@munop.cl">
               CONTACTO ↗
@@ -122,6 +123,30 @@ export default function Home() {
         </section>
 
         <ProductSelector />
+
+        <section className="muai-research" id="research" aria-labelledby="muai-research-title">
+          <div className="muai-research-meta">
+            <span>MUNOP / RESEARCH &amp; ENGINEERING</span>
+            <span>PROTOTYPE / ACTIVE</span>
+          </div>
+          <div className="muai-research-body">
+            <div>
+              <p className="kicker">INTRODUCING / MuAI</p>
+              <h2 id="muai-research-title">ENGINEERING.<br /><em>GROUNDED IN EVIDENCE.</em></h2>
+              <p>MuAI investiga cómo recopilar evidencia técnica, evaluar afirmaciones explícitas y conservar resultados que puedan revisarse posteriormente.</p>
+              <a className="muai-research-link" href="/research/muai">EXPLORAR INVESTIGACIÓN <span aria-hidden="true">→</span></a>
+            </div>
+            <div className="muai-research-terminal" aria-label="Ejemplo de evaluación de evidencia Linux">
+              <div className="muai-terminal-bar"><span>µNOP / MuAI</span><span>ASSESSMENT / 001</span></div>
+              <p><span>target</span> Linux / remote</p>
+              <p><span>claim</span> root usage ≥ 85%</p>
+              <p><span>observed</span> 3.72%</p>
+              <p><span>outcome</span> <strong>REFUTED</strong></p>
+              <p><span>integrity</span> SHA-256 MATCH</p>
+              <small>Resultado de una prueba real. Integridad local ≠ autenticidad independiente.</small>
+            </div>
+          </div>
+        </section>
 
         <section className="home-contact">
           <div className="home-contact-mark">µ</div>
